@@ -1,0 +1,57 @@
+It’s happened to all of us, we want some nice, fresh data that we can sort, analyse and visualise and instead, we get a PDF. What a disappointment.
+
+This course will guide you through the main decisions involved in getting data out of PDFs into a format that you can easily use in data projects.
+
+
+
+Navigate the slideshow with the arrow keys.
+
+When cut and paste fail, you’ll sometimes need to resort to more powerful means. Below is a little more information on the two of the trickiest paths highlighted by the flowchart above.
+
+PDFs are not all the same, some are generated from computer programs (best case scenario) but frequently, they are scanned copies of images. Worst case scenario, they are smudged, tea stained, crooked scans of images. In the latter case – your job will be considerably harder. Nevertheless, there are a couple of tips you can take to make your job easier, read on!
+
+(Modified from text contributed by Tim McNamara)
+
+The OCR Pipeline
+Creating a system for Optical Character Recognition (OCR) can be challenging. In most circumstances, the Data Science Toolkit will be able to extract text from files that you are looking for.
+
+OCR largely involves creating a conveyor belt of programming tools (but read on and you will discover a couple which don’t) The whole process can include several steps:
+
+- Cleaning the content
+- Understanding the layout
+- Extracting text fragments from pieces of each page, according to the layout of each page
+- Reassembling text fragments into a usable form
+
+Cleaning the pages
+This generally involves removing dark splotches left by scanners, straightening pages and adding contrast between the background and the printed text. One of the best free tools for this is unpaper.
+
+File type conversion
+One thing to note is that many OCR engines only support a small number of input file types. Typically, you will need to convert your images to portable pixmap format (.ppm) files.
+
+In this section, we’ll highlight a few of the options for extracting data or text out of a PDF. We don’t want to reinvent the wheel, with all of these options, you’ll need to read the manuals for the individual piece of software – we aim here to merely serve as a guide to help you choose your weapon!
+
+Without learning to code, the options on this front are unfortunately somewhat limited. Take a look at the following pieces of software:
+
+- Tabula – currently causing a lot of buzz and excitement, but you currently need to install your own version, which makes the barrier to entry quite high.
+- ABBYY Finereader – unfortunately not free but highly regarded by many as a powerful piece of kit for busting data out of its PDF prisons.
+- CometDocs – an internet based service
+Warning – the tools below require you to open your command line to install and run. And some require knowledge of code to use. We mention them here so that you get an idea of what is possible.
+
+The main contenders in the code-based ones are:
+
+- Tesseract OCR
+- Ocropus
+- GNU Ocrad
+- PDF2HTML
+Besides the projects mentioned in the presentation, there are a few other options.
+
+The open source project, TaskMeUp is designed to allow you to distribute jobs between hundreds of participants. If you have a project that could benefit from being reviewed by human eyes, this may be an option for you.
+
+Alternatively, there are a small number of commercial firms providing this service. The most well known is Amazon’s Mechanical Turk. They providing something of a wholesale service. You may be better off using a service such as Cloudflower or Microtask. Microtask also has the ethical advantage of not providing service below the minimum wage. Instead, they team up with video game sellers to provide in-game rewards.
+
+Challenge: Free the Budgets
+Task: Find yourselves some PDFs to bust!
+
+For example, there are many PDFs which need your help in the Budget Library of the International Budget Partnership
+Remember – once you’ve liberated your data, share it and save someone else the job! Why not upload to the OpenSpending group on the datahub and drop the OpenSpending Mailing List a line to say you have done so, people are always looking for raw data to visualise and explain.
+- See more at: http://schoolofdata.org/handbook/courses/extracting-data-from-pdf/#sthash.zTmtDCcZ.dpuf
