@@ -1,57 +1,58 @@
-It’s happened to all of us, we want some nice, fresh data that we can sort, analyse and visualise and instead, we get a PDF. What a disappointment.
+C'est arrivé à chacun d'entre nous, de vouloir accéder à de belles données structurées de manière à ce que l'on puisse les trier, les filtrer, les analyser et les visualiser... Et au lieu de cela, on se retrouve avec des documents PDF et les données enfermées dans le document! Impossible de les manipuler, quelle déception...
 
-This course will guide you through the main decisions involved in getting data out of PDFs into a format that you can easily use in data projects.
+Ce cours a pour objectif de vous aider à identifier et mettre en œuvre les différentes étapes nécessaires à l'extraction des données de documents PDF afin de les convertir en formats facilement manipulables pour vos projets.
+
+Naviguez dans la présentation avec les flèches.
+
+Quand le couper-coller ne fonctionne pas, vous aurez besoin d'outils plus puissants pour extraire les données. Vous trouverez ci-bas un peu plus d'informations sur les deux approches les plus problématiques et représentées par le visuel ci-haut.
+
+Tous les PDF ne se ressemblent pas. Certains sont générés depuis des programmes informatiques (dans le meilleur des cas) mais bien souvent, ils peuvent représenter une image, version scannée d'un texte (pire des cas). S'il s'agit d'images, votre travail sera plus compliqué. Néanmoins, quelques astuces peuvent vous faciliter la tâche !
+
+(Texte adapté de l'original par Tim McNamara)
+
+Les OCR
+Un OCR (Optical Character Recognition ou Reconnaissance Optique des caractères) peut paraître barbare. Mais dans la plupart des cas, ces outils d'extraction seront en mesure d'extraire du texte à partir des fichiers que vous recherchez.
+
+Un OCR implique essentiellement la création d'outils de programmation (mais lisez la suite et vous découvrirez certains OCR qui n'en nécessitent pas). L'ensemble du processus peut comporter plusieurs étapes:
+
+- Nettoyer le contenu
+- Comprendre la structuration
+- Extraire des fragments de texte de parties de pages en fonction de la structuration de chaque page
+- Reconstituer des fragments de textes sous une forme utilisable
+
+Nettoyer les pages
+Il s'agit généralement d'enlever les taches foncées laissées par les scanners, redresser les pages et ajouter du contraste entre le fond et le texte imprimé. Un des meilleurs outils gratuits pour cela est unpaper.
+
+Convertir le fichier
+Une chose à noter est que de nombreux OCR ne prennent en charge qu'un nombre limité de types de fichiers d'entrée. En général, vous devrez convertir vos images au format pixmap (. Ppm).
+
+Dans cette section, nous allons mettre en évidence quelques-unes des options pour l'extraction de données ou de texte à partir d'un PDF. Nous ne voulons pas réinventer la roue avec toutes ces options, vous pourrez vous référer aux manuels respectifs des logiciels pour en maîtriser l'usage précis - nous visons ici simplement à vous aider à choisir votre arme!
+
+Sans connaissance de programmation, les options d'usage de logiciels restent malheureusement limitées. Voici quelques logiciels à découvrir:
 
 
+- Tabula – qui génère beaucoup de buzz et enthousiasme en ce moment mais vous aurez besoin d'installer votre propre version, ce qui rend la barrière d'entrée un peu élevée pour l'usage.
+- ABBYY Finereader – Malheureusement n'est pas gratuit mais offre des fonctionnalités puissantes pour libérer les données emprisonnées dans les prisons PDF.
+- CometDocs – Un service en ligne
 
-Navigate the slideshow with the arrow keys.
+Attenton - les outils présentés ci-bas requièrent une ouverture en ligne de code pour l'installation et usage (et donc des connaissances en programmation). Nous les mentionnons cependant afin que vous vous fassiez une idée des outils existants.
 
-When cut and paste fail, you’ll sometimes need to resort to more powerful means. Below is a little more information on the two of the trickiest paths highlighted by the flowchart above.
-
-PDFs are not all the same, some are generated from computer programs (best case scenario) but frequently, they are scanned copies of images. Worst case scenario, they are smudged, tea stained, crooked scans of images. In the latter case – your job will be considerably harder. Nevertheless, there are a couple of tips you can take to make your job easier, read on!
-
-(Modified from text contributed by Tim McNamara)
-
-The OCR Pipeline
-Creating a system for Optical Character Recognition (OCR) can be challenging. In most circumstances, the Data Science Toolkit will be able to extract text from files that you are looking for.
-
-OCR largely involves creating a conveyor belt of programming tools (but read on and you will discover a couple which don’t) The whole process can include several steps:
-
-- Cleaning the content
-- Understanding the layout
-- Extracting text fragments from pieces of each page, according to the layout of each page
-- Reassembling text fragments into a usable form
-
-Cleaning the pages
-This generally involves removing dark splotches left by scanners, straightening pages and adding contrast between the background and the printed text. One of the best free tools for this is unpaper.
-
-File type conversion
-One thing to note is that many OCR engines only support a small number of input file types. Typically, you will need to convert your images to portable pixmap format (.ppm) files.
-
-In this section, we’ll highlight a few of the options for extracting data or text out of a PDF. We don’t want to reinvent the wheel, with all of these options, you’ll need to read the manuals for the individual piece of software – we aim here to merely serve as a guide to help you choose your weapon!
-
-Without learning to code, the options on this front are unfortunately somewhat limited. Take a look at the following pieces of software:
-
-- Tabula – currently causing a lot of buzz and excitement, but you currently need to install your own version, which makes the barrier to entry quite high.
-- ABBYY Finereader – unfortunately not free but highly regarded by many as a powerful piece of kit for busting data out of its PDF prisons.
-- CometDocs – an internet based service
-Warning – the tools below require you to open your command line to install and run. And some require knowledge of code to use. We mention them here so that you get an idea of what is possible.
-
-The main contenders in the code-based ones are:
-
+Pour ceux qui maîtrisent le code (programmation) :
 - Tesseract OCR
 - Ocropus
 - GNU Ocrad
 - PDF2HTML
-Besides the projects mentioned in the presentation, there are a few other options.
+Au delà des projets mentionnés dans la présentation, il y a quelques autres options possibles.
 
-The open source project, TaskMeUp is designed to allow you to distribute jobs between hundreds of participants. If you have a project that could benefit from being reviewed by human eyes, this may be an option for you.
+Le projet open source TaskMeUp vous permet de répartir un travail entre des centaines de participants. Si vous avez un projet qui pourrait profiter de la revue de milliers de paires d'yeux, cela peut représenter une option intéressante pour vous.
 
-Alternatively, there are a small number of commercial firms providing this service. The most well known is Amazon’s Mechanical Turk. They providing something of a wholesale service. You may be better off using a service such as Cloudflower or Microtask. Microtask also has the ethical advantage of not providing service below the minimum wage. Instead, they team up with video game sellers to provide in-game rewards.
+Autre option: il y a quelques entreprises qui proposent de tels services. La plus connue est Amazon’s Mechanical Turk. Elle propose un service "en gros". Vous avez également Cloudflower ou Microtask. Microtask fait équipe avec des vendeurs de jeux vidéo pour offrir des récompenses aux joueurs qui contribuent.
 
-Challenge: Free the Budgets
-Task: Find yourselves some PDFs to bust!
+Défi: Libérez les budgets !
+Tâche: Identifiez des PDF à libérer !
 
-For example, there are many PDFs which need your help in the Budget Library of the International Budget Partnership
-Remember – once you’ve liberated your data, share it and save someone else the job! Why not upload to the OpenSpending group on the datahub and drop the OpenSpending Mailing List a line to say you have done so, people are always looking for raw data to visualise and explain.
-- See more at: http://schoolofdata.org/handbook/courses/extracting-data-from-pdf/#sthash.zTmtDCcZ.dpuf
+Par exemple, il y a beaucoup de fichiers PDF qui ont besoin de votre aide dans la bibliothèque du budget de l' "International Budget Partnership".
+Rappelez-vous - une fois que vous avez libéré vos données, partagez les en les enregistrant sur www.nosdonnees.fr pour faire gagner du temps à d'autres internautes! 
+Pourquoi ne pas les télécharger également sur le groupe "OpenSpending" et déposer votre contribution sur la liste de diffusion pour expliquer ce que vous avez fait. Les gens sont toujours à la recherche de nouvelles données brutes à visualiser et expliquer.
+
+- Voir plus sur : http://schoolofdata.org/handbook/courses/extracting-data-from-pdf/#sthash.zTmtDCcZ.dpuf
