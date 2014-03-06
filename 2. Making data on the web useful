@@ -1,38 +1,38 @@
 Introduction
-Many times data is not easily accessible – although it does exist. As much as we wish everything was available in CSV or the format of our choice – most data is published in different forms on the web. What if you want to use the data to combine it with other datasets and explore it independently?
+Souvent, des données ne sont pas accessibles, alors qu'elles existent. Bien que l’on souhaite pouvoir tout trouver en CSV ou dans un autre format de notre choix, la majorité des données est publiée sous différentes formes sur le web. Et qu'en est-il si vous voulez combiner ces données avec d’autres jeux de données et les explorer indépendamment ?
 
-Scraping to the rescue!
+Le scraping à la rescousse !
 
-Scraping describes the method to extract data hidden in documents – such as Web Pages and PDFs and make it useable for further processing. It is among the most useful skills if you set out to investigate data – and most of the time it’s not especially challenging. For the most simple ways of scraping you don’t even need to know how to write code.
+Le scraping décrit une méthode pour extraire les données cachées dans des documents, tels que des pages web ou des PDFs, et les rend utilisables pour d’autres traitements. C’est une des compétences les plus utiles si vous avez prévu de faire de l’analyse de données, et la majorité du temps, ce n’est même pas compliqué. Pour utiliser les méthodes de scraping les plus simples, vous n’avez même pas besoin de savoir coder.
 
-This example relies heavily on Google Chrome for the first part. Some things work well with other browsers, however we will be using one specific browser extension only available on Chrome. If you can’t install Chrome, don’t worry the principles remain similar.
+La première partie de cet exemple se base principalement sur Google Chrome. Certaines parties du procédé fonctionnent bien dans d’autres navigateurs, cependant nous utiliserons une extension spécifique à Chrome. Si vous ne vous pouvez pas installer Chrome, ne vous inquiétez pas, les principes restent semblables.
 
-Code-free Scraping in 5 minutes using Google Spreadsheets & Google Chrome
-Knowing the structure of a website is the first step towards extracting and using the data. Let’s get our data into a spreadsheet – so we can use it further. An easy way to do this is provided by a special formula in Google Spreadsheets.
+Scraping sans une ligne de code, en cinq minutes, en utilisant Google Spreadsheets & Google Chrome
+Connaître la structure d’un site web est la première étape vers l’extraction et la réutilisation des données. Allons mettre ces données dans un tableur, afin de pouvoir l’utiliser de façon plus libre. Une façon simple de le faire est fournie par une formule spéciale de Google Spreadsheets.
 
-Save yourselves hours of time in copy-paste agony with the ImportHTML command in Google Spreadsheets. It really is magic!
+Épargnez-vous des heures d’agonie passées à copier/coller, à l’aide de la commande ImportHTML de Google Spreadsheets. C’est vraiment magique !
 
-Recipes
-In order to complete the next challenge, take a look in the Handbook at one of the following recipes:
+Recettes
+Afin de compléter le prochain challenge, regardons dans le Handbook l’une des recettes suivantes :
 
-1. Extracting data from HTML tables.
-2. Scraping using the Scraper Extension for Chrome
+1. Extraire des données de tableaux HTML
+2. Scraping à l’aide de l’extension Scraper de Google Chrome
 http://farm9.staticflickr.com/8303/7850933084_b188c02992_o_d.jpg
 
-Both methods are useful for:
+Ces deux méthodes sont utiles pour :
 
-- Extracting individual lists or tables from single webpages
-The latter can do slightly more complex tasks, such as extracting nested information. Take a look at the recipe for more details.
+- Extraire des listes individuelles ou des tableaux issues de pages web uniques
+La seconde recette peut remplir des tâches un peu plus complexes, comme extraire de l’information imbriquée. Jetez un œil à la recette pour plus de détails.
 
-Neither will work for:
+Aucune des deux ne fonctionnera pour :
 
-- Extracting data spread across multiple webpages
+- Extraire des données dispersées sur plusieurs pages web
 
 Challenge
-Task: Find a website with a table and scrape the information from it. Share your result on datahub.io (make sure to tag your dataset with schoolofdata.org)
+Tâche : Trouvez un site web avec une table et scrapez les informations qui s’y trouve. Partagez vos résultats sur datahub.io (n’oubliez pas de tagger votre jeu de données avec ecoledesdonnees.org).
 
-Tip
-Once you’ve got your table into the spreadsheet, you may want to move it around, or put it in another sheet. Right click the top left cell and select “paste special” – “paste values only”.
+Astuce
+Une fois que vous avez votre table dans un tableur, vous pouvez souhaiter la déplacer, ou la mettre dans une autre feuille de calcul. Pour cela, effectuez un clic droit sur la cellule en haut à gauche, et sélectionnez "paste special" - "paste values only".
 
 Scraping more than one webpage: Scraperwiki
 Note: Before proceeding into full scraping mode, it’s helpful to understand the flesh and bones of what makes up a webpage. Read the Introduction to HTML recipe in the handbook.
