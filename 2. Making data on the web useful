@@ -3,7 +3,7 @@ Souvent, des données ne sont pas accessibles, alors qu'elles existent. Bien que
 
 Le scraping à la rescousse !
 
-Le scraping décrit une méthode pour extraire les données cachées dans des documents, tels que des pages Wwb ou des PDFs, et les rend utilisables pour d’autres traitements. C’est une des compétences les plus utiles si vous avez prévu de faire de l’analyse de données, et la majorité du temps, ce n’est même pas compliqué. Pour utiliser les méthodes de scraping les plus simples, vous n’avez même pas besoin de savoir coder.
+Le scraping décrit une méthode pour extraire les données cachées dans des documents, tels que des pages web ou des PDFs, et les rend utilisables pour d’autres traitements. C’est une des compétences les plus utiles si vous avez prévu de faire de l’analyse de données, et la majorité du temps, ce n’est même pas compliqué. Pour utiliser les méthodes de scraping les plus simples, vous n’avez même pas besoin de savoir coder.
 
 La première partie de cet exemple se base principalement sur Google Chrome. Certaines parties du procédé fonctionnent bien dans d’autres navigateurs, cependant nous utiliserons une extension spécifique à Chrome. Si vous ne vous pouvez pas installer Chrome, ne vous inquiétez pas, les principes restent semblables.
 
